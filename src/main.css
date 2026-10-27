@@ -44,7 +44,7 @@ a:hover{
 }
 
 .email{
-  margin: 10px auto 10px;
+  margin: 8px 0 0;
   font-family: monospace;
 }
 
@@ -73,16 +73,28 @@ a:hover{
 /*  border-radius: 50%; */
 }
 
+.profile > .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.profile > .row:before,
+.profile > .row:after {
+  display: none;
+}
+
 .profile-info{
-  height: 275px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
   vertical-align: center;
   position: relative;
   font-size: 18px;
+  line-height: 1.45;
   background-color: rgba(30%,30%,30%,0.5);
   border-radius: 20px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding: 18px 18px 16px;
   /*
   border-style: solid;
   border-color: yellow;
@@ -108,6 +120,50 @@ a:hover{
 .social-links > a {
   color: inherit;
   text-decoration: none;
+}
+
+.hiring {
+  margin-top: auto;
+  padding: 10px 12px;
+  background: rgba(240, 180, 41, 0.16);
+  border-left: 4px solid #f0b429;
+  border-radius: 8px;
+  color: #fff8e8;
+}
+
+.hiring-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.hiring-mark {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.hiring-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  background: #f0b429;
+  color: #2a2208;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+}
+
+.hiring p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.hiring a {
+  color: #ffe08a;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 hr {
@@ -237,7 +293,7 @@ hr {
 
 
 #home { 
-    background: url(./bg.jpeg) no-repeat fixed center;
+    background: url(./hk_background.png) no-repeat fixed center;
     height: auto;
     width: 100%; 
     margin: 0 0; 
